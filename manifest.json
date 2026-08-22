@@ -1,0 +1,73 @@
+{
+  "name": "Resolución 2708 de 2026 - Biblioteca Legal Colombiana",
+  "short_name": "Resolución 2708",
+  "description": "Análisis completo de la Resolución 2708 de 2026. Derogación de 11 circulares laborales del Ministerio de Trabajo.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1d4a8e",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231d4a8e' width='192' height='192'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='80' font-weight='bold' font-family='Arial'>2708</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%231d4a8e' width='512' height='512'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='200' font-weight='bold' font-family='Arial'>2708</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231d4a8e' width='192' height='192' rx='40'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='80' font-weight='bold' font-family='Arial'>2708</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["productivity", "education"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%231d4a8e' width='540' height='720'/><text x='50%' y='50' text-anchor='middle' fill='white' font-size='36' font-weight='bold'>Resolución 2708</text><text x='50%' y='100' text-anchor='middle' fill='white' font-size='20'>Derogación de Circulares</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect fill='%231d4a8e' width='1280' height='720'/><text x='50%' y='360' text-anchor='middle' fill='white' font-size='48' font-weight='bold'>Resolución 2708</text></svg>",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver Circulares",
+      "short_name": "Circulares",
+      "description": "Ver las 11 circulares derogadas",
+      "url": "/?tab=circulares",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%231d4a8e' width='96' height='96'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='50'>📋</text></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Guía Práctica",
+      "short_name": "Guía",
+      "description": "Guía práctica para empresas y trabajadores",
+      "url": "/?tab=practico",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%231d4a8e' width='96' height='96'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='50'>📖</text></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}
