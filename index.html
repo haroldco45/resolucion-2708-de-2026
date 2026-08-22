@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1d4a8e">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Resolución 2708">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Resolución 2708 de 2026 - Biblioteca Legal Colombiana">
+  <meta property="og:description" content="Análisis completo de la Resolución 2708 de 2026 del Ministerio de Trabajo. Derogación de 11 circulares administrativas. Guía práctica para empresas y trabajadores.">
+  <meta property="og:url" content="https://biblioteca-legal-2708.netlify.app">
+  <meta property="og:image" content="https://biblioteca-legal-2708.netlify.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Resolución 2708 de 2026 - Biblioteca Legal Colombiana">
+  <meta name="twitter:description" content="Análisis completo de la Resolución 2708 del Ministerio de Trabajo. Derogación de 11 circulares laborales. Normativa colombiana.">
+  <meta name="twitter:image" content="https://biblioteca-legal-2708.netlify.app/og-image.png">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231d4a8e' width='192' height='192'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='80' font-weight='bold' font-family='Arial'>2708</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%231d4a8e' width='180' height='180' rx='40'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='70' font-weight='bold' font-family='Arial'>2708</text></svg>">
+
+  <title>Resolución 2708 de 2026 - Biblioteca Legal Colombiana</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d4a8e 0%, #2d5aa8 100%);
+      color: white;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    header p {
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.95;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #1d4a8e;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #1d4a8e;
+      padding-left: 1rem;
+    }
+
+    section h3 {
+      color: #2d5aa8;
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 0.8rem;
+      border: 2px solid #1d4a8e;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .search-box:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(29, 74, 142, 0.1);
+    }
+
+    .circulares-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .circular-card {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border: 2px solid #dee2e6;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .circular-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      border-color: #1d4a8e;
+      background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    }
+
+    .circular-card.hidden {
+      display: none;
+    }
+
+    .circular-num {
+      color: #1d4a8e;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .circular-date {
+      color: #6c757d;
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+    }
+
+    .circular-topic {
+      color: #333;
+      font-weight: 600;
+      margin: 0.8rem 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1d4a8e;
+      color: white;
+      padding: 0.3rem 0.7rem;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      margin: 0.2rem 0.2rem 0.2rem 0;
+    }
+
+    .detail-section {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border-left: 4px solid #2d5aa8;
+      border-radius: 4px;
+    }
+
+    .detail-section h4 {
+      color: #2d5aa8;
+      margin-bottom: 0.8rem;
+      font-size: 1.05rem;
+    }
+
+    .detail-section p {
+      color: #495057;
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+    }
+
+    .normas-list {
+      background: white;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+    .norma-item {
+      padding: 0.8rem;
+      border-bottom: 1px solid #e9ecef;
+      font-size: 0.95rem;
+    }
+
+    .norma-item:last-child {
+      border-bottom: none;
+    }
+
+    .norma-item strong {
+      color: #1d4a8e;
+    }
+
+    .install-banner {
+      background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: none;
+      text-align: center;
+    }
+
+    .install-banner.visible {
+      display: block;
+    }
+
+    .install-btn {
+      background: white;
+      color: #28a745;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      margin-left: 1rem;
+      transition: all 0.3s;
+    }
+
+    .install-btn:hover {
+      background: #f0f0f0;
+      transform: scale(1.05);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #dee2e6;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #6c757d;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s;
+    }
+
+    .tab-btn.active {
+      color: #1d4a8e;
+      border-bottom-color: #1d4a8e;
+    }
+
+    .tab-btn:hover {
+      color: #2d5aa8;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    th, td {
+      border: 1px solid #dee2e6;
+      padding: 0.8rem;
+      text-align: left;
+    }
+
+    th {
+      background: #f8f9fa;
+      color: #1d4a8e;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #1d4a8e;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(29, 74, 142, 0.3);
+      transition: all 0.3s;
+      z-index: 99;
+    }
+
+    .back-to-top.visible {
+      display: flex;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(29, 74, 142, 0.5);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, #1d4a8e 0%, #2d5aa8 100%);
+      color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.3rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+
+      section h2 {
+        font-size: 1.2rem;
+      }
+
+      .circulares-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .back-to-top {
+        width: 44px;
+        height: 44px;
+        bottom: 1rem;
+        right: 1rem;
+      }
+
+      .tabs {
+        gap: 0.3rem;
+      }
+
+      .tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+
+      th, td {
+        padding: 0.5rem;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        color: #e0e0e0;
+      }
+
+      section {
+        background: #2d2d2d;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      }
+
+      .circular-card {
+        background: linear-gradient(135deg, #383838 0%, #2d2d2d 100%);
+        border-color: #444;
+        color: #e0e0e0;
+      }
+
+      .circular-card:hover {
+        border-color: #6b9fd4;
+      }
+
+      .detail-section {
+        background: #383838;
+      }
+
+      table {
+        background: #383838;
+      }
+
+      th {
+        background: #2d2d2d;
+        border-color: #444;
+      }
+
+      td {
+        border-color: #444;
+      }
+
+      .normas-list {
+        background: #383838;
+        border-color: #444;
+      }
+
+      footer {
+        background: #0d0d0d;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📋 Resolución 2708 de 2026</h1>
+    <p>Derogación de 11 Circulares Laborales</p>
+    <div class="header-badge">Ministerio de Trabajo - 20 de Agosto de 2026</div>
+  </header>
+
+  <div class="install-banner" id="installBanner">
+    <span>Instala esta app en tu dispositivo para acceso rápido</span>
+    <button class="install-btn" id="installBtn">Instalar</button>
+  </div>
+
+  <main>
+    <!-- Estadísticas -->
+    <section>
+      <h2>📊 Vista General</h2>
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-number">11</div>
+          <div class="stat-label">Circulares Derogadas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Analizadas Completas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2025-2026</div>
+          <div class="stat-label">Período Afectado</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introducción -->
+    <section>
+      <h2>🎯 Propósito de la Resolución</h2>
+      <p><strong>Expedida por:</strong> Ministra Natalia Eugenia López Fuentes</p>
+      <p><strong>Viceministra:</strong> Juliana Patricia Morad Acero</p>
+      
+      <div class="detail-section">
+        <h4>Motivación Principal</h4>
+        <p>Corregir la extralimitación de funciones de las circulares administrativas que se convirtieron, de facto, en fuente autónoma de obligaciones y sanciones para el sector empresarial.</p>
+      </div>
+
+      <div class="detail-section">
+        <h4>Principio Rector Expreso</h4>
+        <p><em>"Los instrumentos administrativos de orientación o instrucción no pueden constituirse, por sí mismos, en fuente autónoma de requisitos, condiciones de acceso o cargas para los administrados"</em></p>
+      </div>
+    </section>
+
+    <!-- Tabs de navegación -->
+    <section>
+      <h2>📚 Contenido de la Resolución</h2>
+      
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('circulares')">Circulares Derogadas</button>
+        <button class="tab-btn" onclick="switchTab('normas')">Normas Aplicables</button>
+        <button class="tab-btn" onclick="switchTab('practico')">Guía Práctica</button>
+        <button class="tab-btn" onclick="switchTab('casos')">Casos de Aplicación</button>
+      </div>
+
+      <!-- Tab 1: Circulares -->
+      <div id="circulares" class="tab-content active">
+        <h3>Búsqueda de Circulares</h3>
+        <input type="text" class="search-box" id="searchBox" placeholder="Buscar por número, tema o año...">
+        
+        <div class="circulares-grid" id="circulares-list">
+          <!-- Generado por JavaScript -->
+        </div>
+      </div>
+
+      <!-- Tab 2: Normas -->
+      <div id="normas" class="tab-content">
+        <h3>Marco Normativo Sustitutivo</h3>
+        <p>Cuando desaparece cada circular, aplican estas normas:</p>
+        <div class="normas-list" id="normas-list">
+          <!-- Generado por JavaScript -->
+        </div>
+      </div>
+
+      <!-- Tab 3: Guía Práctica -->
+      <div id="practico" class="tab-content">
+        <h3>Para Empleadores</h3>
+        <div class="detail-section">
+          <h4>✅ Debe hacer:</h4>
+          <ul style="margin-left: 1.5rem; color: #495057;">
+            <li style="margin: 0.5rem 0;">Revisar matriz legal interna</li>
+            <li style="margin: 0.5rem 0;">Depuración de procedimientos</li>
+            <li style="margin: 0.5rem 0;">Revalidación de actos internos</li>
+            <li style="margin: 0.5rem 0;">Mantener vigilancia de nuevos protocolos</li>
+          </ul>
+        </div>
+
+        <div class="detail-section">
+          <h4>❌ No debe hacer:</h4>
+          <ul style="margin-left: 1.5rem; color: #495057;">
+            <li style="margin: 0.5rem 0;">Asumir que "desapareció la obligación" solo porque se derogó una circular</li>
+            <li style="margin: 0.5rem 0;">Suspender trámites de autorización de despido si la obligación existe en la ley</li>
+            <li style="margin: 0.5rem 0;">Permitir acceso a inspectores a domicilios privados (artículo 28 CP)</li>
+            <li style="margin: 0.5rem 0;">Crear sanciones "antisindicales" de forma administrativa</li>
+          </ul>
+        </div>
+
+        <h3 style="margin-top: 2rem;">Para Trabajadores</h3>
+        <div class="detail-section">
+          <h4>✅ Puede hacer:</h4>
+          <ul style="margin-left: 1.5rem; color: #495057;">
+            <li style="margin: 0.5rem 0;">Reclamar derechos según fuentes vigentes</li>
+            <li style="margin: 0.5rem 0;">Cuestionar decisiones basadas solo en circulares derogadas</li>
+            <li style="margin: 0.5rem 0;">Ejercer libertad sindical sin barreras circulares</li>
+            <li style="margin: 0.5rem 0;">Demandar ante juzgados laborales si hay vulneración</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tab 4: Casos -->
+      <div id="casos" class="tab-content">
+        <h3>Caso 1: Trabajo Doméstico - Acceso de Inspectores</h3>
+        <div class="detail-section">
+          <h4>Situación</h4>
+          <p>Un inspector del Ministerio afirma: "He venido por peligro inminente según Circular 0089 a ingresar a la casa sin su permiso"</p>
+          <h4>Resultado bajo Resolución 2708</h4>
+          <p>El inspector <strong>NO puede ingresar</strong> basándose en esa circular. Fue explícitamente derogada por vulnerar el artículo 28 de la Constitución Política.</p>
+        </div>
+
+        <h3>Caso 2: Estabilidad Laboral Reforzada</h3>
+        <div class="detail-section">
+          <h4>Situación</h4>
+          <p>Un empleador rechaza a una candidata con discapacidad citando la Circular 0049 como respaldo de no contratación.</p>
+          <h4>Resultado</h4>
+          <p>La Circular 0049 fue derogada, pero la obligación de estabilidad reforzada <strong>sigue vigente</strong> en la Sentencia C-531/00. El empleador debe evaluar ajustes razonables.</p>
+        </div>
+
+        <h3>Caso 3: Libertad Sindical</h3>
+        <div class="detail-section">
+          <h4>Situación</h4>
+          <p>Una empresa dice: "Según Circular 0088 debe cumplir con 3 pasos administrativos previos" para presentar pliego de peticiones.</p>
+          <h4>Resultado</h4>
+          <p>La Circular 0088 fue derogada el 20 de agosto de 2026. El sindicato <strong>puede presentar directamente</strong> el pliego conforme al Código Sustantivo del Trabajo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Medidas Transitorias -->
+    <section>
+      <h2>⏱️ Medidas Transitorias</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plazo</th>
+            <th>Responsable</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Inmediato</strong></td>
+            <td>Todas las dependencias</td>
+            <td>Marcar 11 circulares como "derogadas" en normograma</td>
+          </tr>
+          <tr>
+            <td><strong>30 días hábiles</strong></td>
+            <td>Vice. Relaciones Laborales</td>
+            <td>Protocolo de inspección a trabajo doméstico conforme a la CP</td>
+          </tr>
+          <tr>
+            <td><strong>30 días hábiles</strong></td>
+            <td>Vice. Relaciones Laborales</td>
+            <td>Protocolo de plataformas digitales (sin "declaraciones administrativas")</td>
+          </tr>
+          <tr>
+            <td><strong>30 días hábiles</strong></td>
+            <td>Todas las dependencias</td>
+            <td>Informe integral sobre necesidades regulatorias</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Referencias -->
+    <section>
+      <h2>📖 Referencias Normativas</h2>
+      <ul style="margin-left: 1.5rem; color: #495057; line-height: 1.8;">
+        <li>Constitución Política de 1991</li>
+        <li>Código Sustantivo del Trabajo (Decreto 2663 de 1950)</li>
+        <li>Código Procesal del Trabajo (Ley 1564 de 2012)</li>
+        <li>Decreto 2351 de 1965 (Jornada y descansos)</li>
+        <li>Decreto 1072 de 2015 (Código de Trabajo Único)</li>
+        <li>Resolución 2708 de 2026 - Ministerio del Trabajo</li>
+        <li>Sentencia C-531/2000 - Corte Constitucional</li>
+        <li>Convenios OIT 87 y 98 (Libertad sindical)</li>
+        <li>Resolución 0312 de 2019 (SG-SST)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Desarrollada por Vibras Positivas HM — Derechos de Autor Reservados</strong></p>
+    <p>Biblioteca Legal Colombiana | Resolución 2708 de 2026</p>
+    <p>Vigencia: 20 de agosto de 2026 en adelante</p>
+    <p style="margin-top: 1rem; opacity: 0.8; font-size: 0.85rem;">Esta app es instalable. Úsala sin conexión. Última actualización: 21/08/2026</p>
+  </footer>
+
+  <div class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</div>
+
+  <script>
+    // Datos de las 11 circulares
+    const circulares = [
+      {
+        numero: "0101",
+        fecha: "22 de septiembre de 2025",
+        tema: "Jornada máxima, horas extras y remuneración a destajo",
+        problema: "Creó fórmula de compensación económica no prevista en ley",
+        tags: ["destajo", "horas extras", "remuneración"]
+      },
+      {
+        numero: "0120",
+        fecha: "2025",
+        tema: "Estabilidad laboral reforzada (Parte I)",
+        problema: "Procedimientos y requisitos gravosos no previstos en ley",
+        tags: ["estabilidad reforzada", "discapacidad"]
+      },
+      {
+        numero: "0049",
+        fecha: "2026",
+        tema: "Estabilidad laboral reforzada (Parte II)",
+        problema: "Etapas de trámite y cargas probatorias excesivas",
+        tags: ["estabilidad reforzada", "discapacidad"]
+      },
+      {
+        numero: "0089",
+        fecha: "29 de julio de 2026",
+        tema: "Inspección trabajo doméstico - Inviolabilidad del domicilio",
+        problema: "Permitía ingreso a viviendas privadas sin orden judicial (INCONSTITUCIONAL)",
+        tags: ["trabajo doméstico", "domicilio", "constitucional"]
+      },
+      {
+        numero: "0086",
+        fecha: "2026",
+        tema: "Plataformas digitales y relación laboral",
+        problema: "Pretendía declarar administrativamente relación de trabajo",
+        tags: ["plataformas digitales", "relación laboral"]
+      },
+      {
+        numero: "0032",
+        fecha: "2026",
+        tema: "Libertad sindical y conductas antisindicales",
+        problema: "Tipificaba conductas antisindicales de forma autónoma",
+        tags: ["libertad sindical", "antisindicales"]
+      },
+      {
+        numero: "0088",
+        fecha: "2026",
+        tema: "Negociación colectiva",
+        problema: "Creaba requisitos procedimentales para negociación no previstos en ley",
+        tags: ["negociación colectiva", "pliegos de peticiones"]
+      },
+      {
+        numero: "0040",
+        fecha: "2026",
+        tema: "Jornada laboral y horas extras - Vigilancia privada",
+        problema: "Fórmulas de cálculo y obligaciones remunerativas sin respaldo legal",
+        tags: ["vigilancia privada", "horas extras"]
+      }
+    ];
+
+    const normasMap = {
+      "0101": "Arts. 260-262, 170-171 del CST; Decreto 2351/1965",
+      "0120": "Sentencia C-531/00; Arts. 26 CP; Jurisprudencia CC",
+      "0049": "Sentencia C-531/00; Arts. 26 CP; Jurisprudencia CC",
+      "0089": "Art. 28 CP; Arts. 301-310 CST; Decreto 2351/1965",
+      "0086": "Arts. 23-62 CST; Código Procesal del Trabajo",
+      "0032": "Arts. 374-389 CST; Arts. 39 CP; Jurisprudencia CC",
+      "0088": "Arts. 468-507 CST; Jurisprudencia CC",
+      "0040": "Arts. 156-161, 170-171 CST; Decreto 2351/1965"
+    };
+
+    // Renderizar circulares
+    function renderCirculares(filter = "") {
+      const list = document.getElementById("circulares-list");
+      list.innerHTML = "";
+      
+      const filtered = circulares.filter(c => {
+        const searchLower = filter.toLowerCase();
+        return c.numero.includes(searchLower) || 
+               c.tema.toLowerCase().includes(searchLower) ||
+               c.tags.some(t => t.includes(searchLower));
+      });
+
+      if (filtered.length === 0) {
+        list.innerHTML = "<p style='grid-column: 1/-1; text-align: center; color: #6c757d;'>No se encontraron circulares</p>";
+        return;
+      }
+
+      filtered.forEach(c => {
+        const card = document.createElement("div");
+        card.className = "circular-card";
+        card.innerHTML = `
+          <div class="circular-num">Circular ${c.numero}</div>
+          <div class="circular-date">${c.fecha}</div>
+          <div class="circular-topic">${c.tema}</div>
+          <p style="color: #495057; font-size: 0.9rem; margin: 0.8rem 0;">${c.problema}</p>
+          <div>${c.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}</div>
+        `;
+        card.onclick = () => showDetail(c.numero);
+        list.appendChild(card);
+      });
+    }
+
+    function showDetail(numero) {
+      const circ = circulares.find(c => c.numero === numero);
+      if (circ) {
+        alert(`Circular ${numero}\n\n${circ.tema}\n\nNorma sustitutiva:\n${normasMap[numero]}\n\nPara detalles completos, consulta el documento oficial.`);
+      }
+    }
+
+    // Renderizar normas
+    function renderNormas() {
+      const list = document.getElementById("normas-list");
+      list.innerHTML = "";
+
+      Object.entries(normasMap).forEach(([numero, norma]) => {
+        const item = document.createElement("div");
+        item.className = "norma-item";
+        item.innerHTML = `<strong>Circular ${numero}:</strong> ${norma}`;
+        list.appendChild(item);
+      });
+    }
+
+    // Tab switching
+    function switchTab(tabName) {
+      document.querySelectorAll(".tab-content").forEach(el => el.classList.remove("active"));
+      document.querySelectorAll(".tab-btn").forEach(el => el.classList.remove("active"));
+      
+      document.getElementById(tabName).classList.add("active");
+      event.target.classList.add("active");
+    }
+
+    // Search
+    document.getElementById("searchBox").addEventListener("input", (e) => {
+      renderCirculares(e.target.value);
+    });
+
+    // Back to top
+    window.addEventListener("scroll", () => {
+      const btn = document.getElementById("backToTop");
+      if (window.scrollY > 300) {
+        btn.classList.add("visible");
+      } else {
+        btn.classList.remove("visible");
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // PWA Install
+    let deferredPrompt;
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      document.getElementById("installBanner").classList.add("visible");
+    });
+
+    document.getElementById("installBtn").addEventListener("click", async () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`Instalación ${outcome}`);
+        deferredPrompt = null;
+        document.getElementById("installBanner").classList.remove("visible");
+      }
+    });
+
+    // Service Worker
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").catch(err => console.log("SW error:", err));
+    }
+
+    // Initialize
+    renderCirculares();
+    renderNormas();
+  </script>
+</body>
+  </html>
